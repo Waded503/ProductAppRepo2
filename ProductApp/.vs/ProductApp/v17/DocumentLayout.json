@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\djwad\\source\\repos\\ProductApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE77CD89-00C9-4649-808C-7BD9956AA926}|ProductApp.Tests\\ProductApp.Tests.csproj|c:\\users\\djwad\\source\\repos\\productapp\\productapp.tests\\testsimpleproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE77CD89-00C9-4649-808C-7BD9956AA926}|ProductApp.Tests\\ProductApp.Tests.csproj|solutionrelative:productapp.tests\\testsimpleproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE067B1-7148-4AEE-8622-8265FEAAEAC0}|ProductApp\\ProductApp.csproj|c:\\users\\djwad\\source\\repos\\productapp\\productapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE067B1-7148-4AEE-8622-8265FEAAEAC0}|ProductApp\\ProductApp.csproj|solutionrelative:productapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE067B1-7148-4AEE-8622-8265FEAAEAC0}|ProductApp\\ProductApp.csproj|c:\\users\\djwad\\source\\repos\\productapp\\productapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE067B1-7148-4AEE-8622-8265FEAAEAC0}|ProductApp\\ProductApp.csproj|solutionrelative:productapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestSImpleProductController.cs",
+              "DocumentMoniker": "C:\\Users\\djwad\\source\\repos\\ProductApp\\ProductApp.Tests\\TestSImpleProductController.cs",
+              "RelativeDocumentMoniker": "ProductApp.Tests\\TestSImpleProductController.cs",
+              "ToolTip": "C:\\Users\\djwad\\source\\repos\\ProductApp\\ProductApp.Tests\\TestSImpleProductController.cs*",
+              "RelativeToolTip": "ProductApp.Tests\\TestSImpleProductController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:51:55.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\djwad\\source\\repos\\ProductApp\\ProductApp\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductApp\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\djwad\\source\\repos\\ProductApp\\ProductApp\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductApp\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:41:46.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\djwad\\source\\repos\\ProductApp\\ProductApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductApp\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\djwad\\source\\repos\\ProductApp\\ProductApp\\Models\\Product.cs",
+              "RelativeToolTip": "ProductApp\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:39:03.821Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
