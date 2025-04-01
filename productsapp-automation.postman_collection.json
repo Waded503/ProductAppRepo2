@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "b356e009-e65a-48ab-af23-1629e43dcbd6",
+		"name": "productsapp-automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43665156",
+		"_collection_link": "https://dj-2660038.postman.co/workspace/DJ's-Workspace~d561011f-537e-48fb-83ae-c01dc76cbb7a/collection/43665156-b356e009-e65a-48ab-af23-1629e43dcbd6?action=share&source=collection_link&creator=43665156"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.test(\"value of [0].Id to be 1\", () => {\r",
+							"    pm.expect(jsonData[0].Id).to.equal(1);\r",
+							"});\r",
+							"pm.test(\"value of [0].Name to be 'Product1'\", () => {\r",
+							"    pm.expect(jsonData[0].Name).to.equal(\"Product1\");\r",
+							"});\r",
+							"pm.test(\"value of [0].Price to be 10.0\", () => {\r",
+							"    pm.expect(jsonData[0].Price).to.equal(10.0);\r",
+							"});\r",
+							"pm.test(\"value of [0].Category to be 'Category1'\", () => {\r",
+							"    pm.expect(jsonData[0].Category).to.equal(\"Category1\");\r",
+							"});\r",
+							"pm.test(\"response to be 200 OK\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/api/products",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
