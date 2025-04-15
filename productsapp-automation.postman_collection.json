@@ -14,22 +14,28 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"var jsonData = JSON.parse(responseBody);\r",
+							"let jsonData = pm.response.json();\r",
+							"\r",
 							"pm.test(\"value of [0].Id to be 1\", () => {\r",
 							"    pm.expect(jsonData[0].Id).to.equal(1);\r",
 							"});\r",
-							"pm.test(\"value of [0].Name to be 'Product1'\", () => {\r",
-							"    pm.expect(jsonData[0].Name).to.equal(\"Product1\");\r",
+							"\r",
+							"pm.test(\"value of [0].Name to be 'Potato Soup'\", () => {\r",
+							"    pm.expect(jsonData[0].Name).to.equal(\"Potato Soup\");\r",
 							"});\r",
-							"pm.test(\"value of [0].Price to be 10.0\", () => {\r",
-							"    pm.expect(jsonData[0].Price).to.equal(10.0);\r",
+							"\r",
+							"pm.test(\"value of [0].Price to be 42.0\", () => {\r",
+							"    pm.expect(jsonData[0].Price).to.equal(42.0);\r",
 							"});\r",
-							"pm.test(\"value of [0].Category to be 'Category1'\", () => {\r",
-							"    pm.expect(jsonData[0].Category).to.equal(\"Category1\");\r",
+							"\r",
+							"pm.test(\"value of [0].Category to be 'Shmoceries'\", () => {\r",
+							"    pm.expect(jsonData[0].Category).to.equal(\"Shmoceries\");\r",
 							"});\r",
+							"\r",
 							"pm.test(\"response to be 200 OK\", () => {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript",
@@ -60,9 +66,51 @@
 		},
 		{
 			"name": "Get Product By ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Product ID is 1\", () => {\r",
+							"    pm.expect(jsonData.Id).to.equal(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Product Name is 'Potato Soup'\", () => {\r",
+							"    pm.expect(jsonData.Name).to.equal(\"Potato Soup\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Product Category is 'Shmoceries'\", () => {\r",
+							"    pm.expect(jsonData.Category).to.equal(\"Shmoceries\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Product Price is 42.0\", () => {\r",
+							"    pm.expect(jsonData.Price).to.equal(42.0);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/api/products/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
 			},
 			"response": []
 		}
